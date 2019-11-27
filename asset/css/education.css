@@ -1,0 +1,39 @@
+.intro{
+	min-height: 100%;
+	overflow: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.edu-container{
+	width: 100%;
+	color: #333;
+}
+.edu-container p{
+	padding: 0;
+	margin: 0;
+}
+.edu-container{
+	color: #585858;
+}
+.edu-date{
+	font-size: 1rem;
+}
+.edu-title{
+	color: #353535;
+	font-size: 1.2rem;
+}
+.edu-college{
+	font-style: italic;
+	font-size: 1rem;
+}
+.edu-location{
+	font-style: italic;
+	font-size: 1rem;
+	margin-bottom: 1rem!important;
+}
+.edu-detail{
+	color: #484848;
+	font-size: 0.8rem;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Maven+Pro:900|Montserrat|Open+Sans:400,700,800|Poppins&display=swap');
+html{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+div.content {
+  margin-left: 12.5rem;
+  padding: 0 1rem;
+  height: 100%;
+}
+#sidebar{
+  min-width: 12rem;
+  max-width: 16rem;
+  width: 10%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  height: 100%;
+}
+.index-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  background-color: #121212;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.index-sidebar a {
+  display: block;
+  color: #aaa;
+  padding: 0.5rem;
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+ 
+.index-sidebar a.active {
+  color: white;
+}
+.index-sidebar a:hover:not(.active) {
+  color: white;
+  filter: drop-shadow(0.1rem);
+}
+
+#index>span{
+  float: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+  #sidebar{
+    width: 100% !important;
+    max-width: 100%;
+    height: auto; 
+    position: relative;
+  }
+  .index-sidebar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  #index>span {
+    display: none;
+  }
+  #index:after {
+    content: 'home';
+  }
+  #index{
+    font-size: 1rem !important;
+    content: 'HOME';
+  }
+  .index-sidebar a {
+    font-size: 1rem;
+    float: left;
+  }
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .index-sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+.section-title{
+  font-size: 1.75rem;
+  color: #444;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.section-text{
+  color: #333;
+  font-size: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.no-bt-margin{
+  margin-bottom: 0;
+}
+.mt-1{
+  margin-top: 1rem;
+}
+.mb-2{
+  margin-bottom: 2rem;
+}

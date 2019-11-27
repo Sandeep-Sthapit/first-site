@@ -1,0 +1,33 @@
+.intro{
+	min-height: 100%;
+	overflow: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.pub-title{
+	color: #777;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+.pub-paper{
+	font-size: 1rem;
+}
+
+.pub-sub-title{
+	color: #444;
+	margin: 0;
+	font-size: 1.1rem;
+}
+.pub-container{
+	color: #585858;
+}
+.pub-detail{
+	margin: 0;
+	color: #484848;
+	font-style: italic;
+	font-size: 0.8rem;
+}

@@ -1,0 +1,87 @@
+.intro{
+	min-height: 100%;
+	overflow: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.misc-detail{
+	margin: 0;
+	color: #585858;
+	font-size: 1rem;
+}
+
+.pen{
+	display: flex;
+	justify-content: flex-start;
+	margin: 2%;
+	align-items: center;
+	width: 96%;
+	height: 21rem;
+}
+
+.cp_embed_wrapper {
+  /* required for resize to work */
+  overflow: hidden;
+
+  /* make resizeble! */
+  resize: both;
+
+  /* required to see the handle */
+  background: white;
+  padding-bottom: 10px;
+
+  /* default height */
+  height: 100%;
+  width: 100%;
+}
+.cp_embed_wrapper iframe {
+  height: 100% !important;
+}
+
+
+.anim-container{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.anim-object{
+	position: relative;
+	height: 12rem;
+	margin: 1rem;
+}
+.anim-object>img{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+}
+.label:hover{
+	opacity: 90%;
+}
+.label{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0%;
+	color: white;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease-in-out;
+}
+.label>p{
+	margin: 2rem;
+	text-decoration: underline;
+	transition: 0.3s ease-in-out;
+}

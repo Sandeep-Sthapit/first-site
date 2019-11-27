@@ -1,0 +1,31 @@
+.contact-links{
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-start;
+	height: 2rem;
+}
+.contact-links>a{
+	height: 100%;
+	margin-right: 0.75rem;
+}
+.contact-links img{
+	height: 100%;
+}
+.intro{
+	min-height: 100%;
+	overflow: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (min-width: 1000px) {
+  .intro {
+    padding-right: 10%;
+    padding-left: 1rem;
+  }
+}
