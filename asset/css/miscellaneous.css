@@ -83,5 +83,6 @@
 .label>p{
 	margin: 2rem;
 	text-decoration: underline;
+	text-align: center;
 	transition: 0.3s ease-in-out;
 }

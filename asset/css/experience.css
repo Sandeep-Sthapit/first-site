@@ -58,14 +58,12 @@
 }
 
 .image-link{
+	position: relative;
 	width: 16.5rem;
 	margin: 2%;
 	height: 10rem;
 	overflow: hidden;
 	transition: 0.3s ease-in-out;
-}
-.image-link:hover{
-	transform: scale(1.05);
 }
 .thumbnail{
 	position: relative;
@@ -73,6 +71,31 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+.label:hover{
+	opacity: 90%;
+}
+.label{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0%;
+	color: white;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease-in-out;
+}
+.label>p{
+	margin: 2rem;
+	text-decoration: underline;
+	text-align: center;
+	transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 900px) {
@@ -89,3 +112,4 @@
 		height: 10rem;
 	}
 }
+
