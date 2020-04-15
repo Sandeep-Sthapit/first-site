@@ -19,37 +19,6 @@ $(document).ready(function(){
 		}
 	}
 
-	//for jump scrolls
-	$("#topnav a").on('click', function(event) {
-		if (this.hash !== "") {
-			$("#topnav a").removeClass('active-nav');
-			$(this).addClass('active-nav');
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-			    scrollTop: $(hash).offset().top - $navbar.height()
-			}, 800, function(){
-			 //    window.location.hash = hash;
-			});
-		}
-	});
-
-
-
-	//for accordions
-	$('.accordion').each(function(i, obj) {
-	    $(obj).on("click", function() {
-		    $(this).toggleClass("active-accordion");
-		    console.log(this)
-		    var panel = this.nextElementSibling;
-		    if (panel.style.maxHeight) {
-		      panel.style.maxHeight = null;
-		    } else {
-		      panel.style.maxHeight = panel.scrollHeight + "px";
-		    } 
-	  	});
-	});
-
 	
 	//for search
 	var $submit = $('#search-submit');
@@ -87,5 +56,55 @@ $(document).ready(function(){
 
 	$(".search-container input[name='keyword']").on("input", unmark);
 	$submit.on("click", mark);
+
+	//to read data
+	var data;
+	$.getJSON("data.json", function(result){
+	    data = result;
+	    console.log(data);
+
+
+		var navHTML = $('#createNav').html();
+		var navTemplate = Handlebars.compile(navHTML);
+		var navData = navTemplate(data);
+
+		$.when($('#nav-sec').html(navData)).done(function(){
+			$('.tab-button').first().addClass('active-nav');
+			//for jump scrolls
+			$("#topnav a").on('click', function(event) {
+				if (this.hash !== "") {
+					$("#topnav a").removeClass('active-nav');
+					$(this).addClass('active-nav');
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+					    scrollTop: $(hash).offset().top - $navbar.height()
+					}, 800, function(){
+					 //    window.location.hash = hash;
+					});
+				}
+			});
+		});
+
+		var faqHTML = $('#createSection').html();
+		var template = Handlebars.compile(faqHTML);
+		var faqData = template(data);
+
+		$.when($('#faq-content').html(faqData)).done(function(){
+			//for accordions
+			$('.accordion').each(function(i, obj) {
+			    $(obj).on("click", function() {
+				    $(this).toggleClass("active-accordion");
+				    console.log(this)
+				    var panel = this.nextElementSibling;
+				    if (panel.style.maxHeight) {
+				      panel.style.maxHeight = null;
+				    } else {
+				      panel.style.maxHeight = panel.scrollHeight + "px";
+				    } 
+			  	});
+			});
+		});
+	});
 });
 

@@ -7,6 +7,7 @@
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha256-usTqAE1ywvdMtksWzdeWzD75MsfJN0h0U7y2NtZL3N0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
   </head>
 
@@ -18,14 +19,42 @@
           <button id="search-submit" type="submit" class='search-button'><p>Search</p></button>
         <!-- </form> -->
     </div>
-      <div class='tab-navigation'>
-        <a class="tab-button active-nav" href="#section1">Section 1</a>
-        <a class="tab-butto" href="#section2">Section 2</a>
-        <a class="tab-butto" href="#section3">Section 3</a>
+      <div id='nav-sec' class='tab-navigation'>
       </div>
     </div>
-    <div class="content">
-      <section id="section1" class='faq-section'>
+
+    <script id="createNav" type="text/x-handlebars-template">
+      {{#each section}}
+        <a class="tab-button" href="#section-{{@index}}">{{sectionname}}</a>
+      {{/each}}
+    </script>
+
+    <script id="createSection" type="text/x-handlebars-template">
+        {{#each section}}
+          <section id="section-{{@index}}" class="faq-section">
+            <h2 class='section-header'>{{sectionname}}</h2>
+            {{#each data}}
+              <div class="faq-qna">
+                <button class="accordion"><p>{{question}}</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
+                <div class="panel">
+                  {{#if answer}}
+                    <p>{{answer}}</p>
+                  {{/if}}
+                  {{#if answerlist}}
+                    {{#each answerlist}}
+                      <p>{{this}}</p>
+                    {{/each}}
+                  {{/if}}
+                </div>
+              </div>
+            {{/each}}
+          </section>
+        {{/each}}
+    </script>
+    <div id='faq-content' class="content">
+      
+      <!-- <section id="section1" class='faq-section'>
+
         <h2 class='section-header'>Category I</h2>
         <div class="faq-qna">
           <button class="accordion"><p>holi ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
@@ -48,56 +77,7 @@
           </div>
         </div>
       </section>
-
-      <section id="section2" class='faq-section'>
-        <h2 class='section-header'>Category II</h2>
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="section3" class='faq-section'>
-        <h2 class='section-header'>Category III</h2>
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </section>
-    </div>
+    </div> -->
 
     <script type="text/javascript" src="faq.js"></script>
   </body>
