@@ -41,9 +41,11 @@
                     <p>{{answer}}</p>
                   {{/if}}
                   {{#if answerlist}}
+                    <ul class="answerlist">
                     {{#each answerlist}}
-                      <p>{{this}}</p>
+                      <li>{{this}}</li>
                     {{/each}}
+                    </ul>
                   {{/if}}
                 </div>
               </div>
@@ -51,34 +53,13 @@
           </section>
         {{/each}}
     </script>
-    <div id='faq-content' class="content">
-      
-      <!-- <section id="section1" class='faq-section'>
-
-        <h2 class='section-header'>Category I</h2>
-        <div class="faq-qna">
-          <button class="accordion"><p>holi ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="faq-qna">
-          <button class="accordion"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </section>
-    </div> -->
-
+    <div class="content">
+      <div id='faq-content'></div>
+      <div id='faq-credentials'>
+        <p>Content Writing and Review: Dr. Jane Wilson-Howarth ( BM, MSc (Oxon), DCH, FFTM RCPS )</p>
+        <p>Dr Jane Wilson-Howarth is a British physician with 25 years experience of practise in the UK and around 13 years experience of working on health promotion in Asia. She has a special interest in zoonoses; <a href="www.wilson-howarth.com" target="_blank">www.wilson-howarth.com</a></p>
+      </div>
+    </div>
     <script type="text/javascript" src="faq.js"></script>
   </body>
 </html>

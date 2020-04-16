@@ -128,12 +128,14 @@ body {
 .faq-qna{
   margin: 0 8%;
   padding: 0 0.5rem;
-  border-bottom: 0.1rem dashed #000;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.answerlist{
+  list-style-type:disc;
 }
 
-
 .accordion {
-  color: #000;
+  color: #333333;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -194,3 +196,8 @@ mark {
   padding: 0;
 }
 
+#faq-credentials{
+  font-style: italic;
+  font-size: 0.8rem;
+  padding: 1.5rem 8%;
+}
