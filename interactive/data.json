@@ -1,0 +1,422 @@
+{
+  "title": "sample interactive page",
+  "page": [
+	{
+	    "titleContainerClass": "",
+
+	    "title": "Beauty of nature around the world",
+	    "titleClass": "",
+
+	    "credits": "By Someone | Apr. 20 2020",
+	    "creditClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/11/23/03/08/valley-4646114_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/11/23/03/08/valley-4646114_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Maecenas id elementum magna. Maecenas ac erat vitae mi auctor aliquet in id est. Suspendisse potenti. Suspendisse tempus ex ac iaculis maximus. In vel mauris eget lacus commodo sagittis. Donec porttitor lectus non tortor luctus cursus. Suspendisse elit nibh, pulvinar eu magna eget, mollis dapibus odio. Nam ut faucibus elit.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/04/07/16/44/ticino-5014092_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/04/07/16/44/ticino-5014092_960_720.jpg",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 1",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Donec Congue"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "32"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Some mountain"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Condimentum"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/01/14/15/51/illustration-4765349_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Duis sagittis ligula quis risus aliquam tristique. Aliquam eget arcu nec tortor venenatis ornare. Cras bibendum lectus nec porta cursus. Nam dignissim euismod interdum. Aliquam non molestie elit. Donec eget condimentum ante. Vestibulum id ipsum lorem. Nulla facilisi. Donec scelerisque metus tempor, pretium eros vitae, laoreet neque. Aliquam suscipit, arcu eu commodo elementum, ipsum ante accumsan ligula, ut congue lectus eros ac neque. Mauris accumsan sapien vitae suscipit dictum. Fusce convallis libero eget est sollicitudin tincidunt. Nulla et nisi id ipsum iaculis consequat eget non tellus.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/01/14/15/51/illustration-4765349_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/01/14/15/51/illustration-4765349_960_720.jpg",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 2",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Victoria Borodinova"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "36"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Somewhere"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Suspendisse"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2020/01/14/15/51/illustration-4765349_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Proin ipsum lectus, facilisis ac justo sed, porttitor tempor mauris. Pellentesque lorem mi, fringilla in diam ac, ultrices mollis eros. Aenean nunc nibh, vulputate id augue eget, rutrum euismod enim. Sed vitae facilisis arcu. Morbi pharetra elit id nunc pretium mattis. Fusce consectetur finibus eleifend. Phasellus eu dolor vitae arcu eleifend rutrum non et augue. Etiam finibus metus et mattis imperdiet. Vivamus quam enim, ultricies ut vestibulum quis, malesuada non orci. Sed et consectetur ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a porta enim. Phasellus ac nibh porttitor nisl elementum vehicula a ut lectus. In venenatis nulla in tellus faucibus tristique. Suspendisse dapibus non arcu nec sodales.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2015/10/13/11/42/abstract-985966_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2015/10/13/11/42/abstract-985966_960_720.jpg",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 3",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Merio"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "26"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Somewhere"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Curabitur"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2015/10/13/11/42/abstract-985966_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Curabitur fermentum consectetur aliquam. Quisque sit amet porta odio. Nam in eros et sapien lobortis imperdiet eget in lorem. Sed sed gravida lorem, sit amet cursus augue. Mauris consectetur mattis nulla non fringilla. Ut fermentum sem tortor, quis fringilla lorem mollis sed. Nulla tristique efficitur dui eget ultricies. Duis convallis lacus eget nibh dictum tristique. Proin hendrerit ipsum sem, non feugiat lacus consequat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer varius, enim id ornare euismod, purus justo efficitur ligula, at consequat justo lacus vel nisl.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/08/03/10/15/india-2575354_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/08/03/10/15/india-2575354_960_720.jpg",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 4",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Elliot Congue"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "45"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Some mountain"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Fusce"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/08/03/10/15/india-2575354_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Fusce vestibulum nec eros ut consequat. Pellentesque placerat dolor et libero accumsan laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec sapien pellentesque, euismod eros id, pretium massa. Sed venenatis odio eget est maximus, in lacinia orci laoreet. Ut et nibh tincidunt, vestibulum quam eget, faucibus risus. Vestibulum et leo finibus, pretium orci in, faucibus felis. Sed sit amet ultrices risus. Donec congue, lectus sed sagittis lobortis, orci mi ultrices enim, non lobortis nisl dolor et dolor. Suspendisse potent",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/01/31/11/13/scat-3966533_960_720.png",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/01/31/11/13/scat-3966533_960_720.png",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 5",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Creozavr"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "36"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Somewhere"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Vivamus"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/01/31/11/13/scat-3966533_960_720.png",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Proin ipsum lectus, facilisis ac justo sed, porttitor tempor mauris. Pellentesque lorem mi, fringilla in diam ac, ultrices mollis eros. Aenean nunc nibh, vulputate id augue eget, rutrum euismod enim. Sed vitae facilisis arcu. Morbi pharetra elit id nunc pretium mattis. Fusce consectetur finibus eleifend. Phasellus eu dolor vitae arcu eleifend rutrum non et augue. Etiam finibus metus et mattis imperdiet. Vivamus quam enim, ultricies ut vestibulum quis, malesuada non orci. Sed et consectetur ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a porta enim. Phasellus ac nibh porttitor nisl elementum vehicula a ut lectus. In venenatis nulla in tellus faucibus tristique. Suspendisse dapibus non arcu nec sodales.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/05/04/15/24/art-4178302_960_720.jpg",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/05/04/15/24/art-4178302_960_720.jpg",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 6",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Martina Bulkova"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "29"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Somewhere"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Euismod"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2019/05/04/15/24/art-4178302_960_720.jpg",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Curabitur fermentum consectetur aliquam. Quisque sit amet porta odio. Nam in eros et sapien lobortis imperdiet eget in lorem. Sed sed gravida lorem, sit amet cursus augue. Mauris consectetur mattis nulla non fringilla. Ut fermentum sem tortor, quis fringilla lorem mollis sed. Nulla tristique efficitur dui eget ultricies. Duis convallis lacus eget nibh dictum tristique. Proin hendrerit ipsum sem, non feugiat lacus consequat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer varius, enim id ornare euismod, purus justo efficitur ligula, at consequat justo lacus vel nisl.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/11/15/20/32/sea-turtle-2952470_960_720.png",
+	    "pageClass": ""
+	},
+	{
+		"overlay": true,
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/11/15/20/32/sea-turtle-2952470_960_720.png",
+	    "pageClass": "",
+
+	    "textblocks": [
+	    	{
+	    		"blockClass": "",
+	    		"blockTitle": "Stage 7",
+	    		"blockTitleClass": "",
+	    		"blockTexts": [
+	    			{
+			    		"tag": "Artist:",
+			    		"value": "Praesent"
+			    	},
+	    			{
+			    		"tag": "Age:",
+			    		"value": "41"
+			    	},
+	    			{
+			    		"tag": "Location:",
+			    		"value": "Somewhere"
+			    	},
+	    			{
+			    		"tag": "Title:",
+			    		"value": "Etiam"
+			    	}
+	    		]
+	    	}
+	    ]
+	},
+	{
+		"overlay": true,
+	    "overlayClass": "",
+
+	    "backgroundColor": "black",
+	    "backgroundImage": "https://cdn.pixabay.com/photo/2017/11/15/20/32/sea-turtle-2952470_960_720.png",
+	    "pageClass": "",
+
+	    "texts":[
+	    	{
+	    		"data": "Praesent maximus in elit sit amet fermentum. Donec ut porttitor ex. Etiam accumsan interdum felis at consectetur. Sed pulvinar iaculis lacus. Phasellus tempus id justo et tristique. Aliquam varius a sapien non pharetra. Aenean mattis sed tortor eget ullamcorper. Etiam condimentum sem lacus, sit amet scelerisque mauris viverra id. Quisque volutpat sollicitudin hendrerit. Pellentesque at gravida arcu. Aenean ut sagittis felis, nec molestie turpis. Nulla turpis purus, dictum eget lobortis sed, dictum vel neque. Fusce rhoncus lobortis lorem, id malesuada orci convallis ac. Sed egestas risus sem, in euismod lectus iaculis nec.",
+	    		"classname": ""
+	    	}
+	    ]
+	},
+	{
+		"creditPage": true,
+	    "credits": "design from washington post, copied by Sandeep Sthapit",
+	    "relatedStories": [
+	    	{
+	    		"storyTitle": "Next Story title",
+	    		"storyURL": "https://pixabay.com/photos/giraffe-safari-africa-savannah-3778536/",
+	    		"storyDomain": "www.pixabay.com",
+	    		"thumbnail": "https://cdn.pixabay.com/photo/2018/10/28/11/18/giraffe-3778536_960_720.jpg"
+	    	},
+	    	{
+	    		"storyTitle": "Story number 3 title",
+	    		"storyURL": "https://pixabay.com/photos/one-world-trade-center-1wtc-new-york-768795/",
+	    		"storyDomain": "www.pixabay.com",
+	    		"thumbnail": "https://cdn.pixabay.com/photo/2015/05/15/14/58/one-world-trade-center-768795_960_720.jpg"
+	    	}
+	    ]
+	}
+  ]
+}

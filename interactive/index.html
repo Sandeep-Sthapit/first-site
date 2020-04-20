@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha256-usTqAE1ywvdMtksWzdeWzD75MsfJN0h0U7y2NtZL3N0=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id='page-indication-bar'>
+
+    </div>
+
+    <div id="page-content" class='content'>
+      
+
+    </div>
+    
+    <!-- navigation buttons -->
+    <p id='next-read-more'>Read more</p>
+    <div id="next-arrow">
+      <svg class="arrow-item" width="14" height="22" viewBox="0 0 14 22" xmlns="http://www.w3.org/2000/svg"><path d="M8.4,11L0,2.8L2.8,0L14,11L2.8,22L0,19.3L8.4,11z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+    </div>
+    <div id="prev-arrow">
+      <svg class="arrow-item" width="14" height="22" viewBox="0 0 14 22" xmlns="http://www.w3.org/2000/svg"><path d="M14,19.3L11.2,22L0,11L11.2,0L14,2.8L5.6,11L14,19.3z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+    </div>
+    <div id="three-dots">
+      <svg xmlns='http://www.w3.org/2000/svg' width='48' height='100%' viewBox="0 0 48 48" fill='#FFF'><path d='M12 20c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm24 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-12 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z'/></svg>
+    </div>
+    <div id="replay-button">
+      <svg xmlns='http://www.w3.org/2000/svg' width='48' height='100%' viewBox="0 0 48 48" fill='#FFF'><path d='M24 10V2L14 12l10 10v-8c6.63 0 12 5.37 12 12s-5.37 12-12 12-12-5.37-12-12H8c0 8.84 7.16 16 16 16s16-7.16 16-16-7.16-16-16-16z'/></svg>
+    </div>
+    
+    <!-- share button -->
+    <button id="social-share-button"></button>
+    <div id="social-share-overlay"></div>
+    <div id="social-share">
+      <button id="close-social-share">&#10005</button>
+      <div id="social-share-contianer">
+        <!-- Link -->
+        <div>
+          <button id="social-share-link"></button>
+          <span>Get Link</span>
+        </div>
+        <!-- Email -->
+        <div>
+          <a id="social-share-email" href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"></a>
+          <span>Email</span>
+        </div>
+        <!-- Twitter -->
+        <div>
+          <a id="social-share-twitter" href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"></a>
+          <span>Twitter</span>
+        </div>
+        <!-- Facebook -->
+        <div> 
+          <a id="social-share-fb" href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank"></a>
+          <span>Facebook</span>
+        </div>
+      </div>
+    </div>
+    <!-- tap to read -->
+
+
+    <!-- handlebars for top indicators -->
+    <script id="createIndicators" type="text/x-handlebars-template">
+      {{#each page}}
+        {{#unless creditPage}}
+          <div class="page-indicators"></div>
+        {{/unless}}
+      {{/each}}
+    </script>
+      
+    <!-- handle bars for each page -->
+    <script id="createPage" type="text/x-handlebars-template">
+      {{#if creditPage}}
+        <div id="my-ending-page">
+          <div id="my-related-stories">
+            <h3>related stories</h3>
+            <div>
+              {{#each relatedStories}}
+                <a class="related-stories-link" href="{{storyURL}}">
+                  <div class="related-story-container">
+                    <div class="related-story-text" >
+                      <h2>{{storyTitle}}</h2>
+                      <p>{{storyDomain}}</p>
+                    </div>
+                    <div class="related-story-thumbnail" style="background-image: url('{{thumbnail}}')"></div>
+                  </div>
+                </a>
+              {{/each}}
+            </div>
+          </div>
+          <div id="my-credits">
+            <h3>Credits</h3>
+            <div>
+              <p>{{credits}}</p>
+            <div>
+          </div>
+        </div>
+      {{else}}
+        <div class="my-page {{pageClass}}" style="background-image: url('{{backgroundImage}}'); background-color: {{backgroundColor}}">
+          {{#if overlay}}
+            <div class="my-page-overlay {{overlayClass}}"></div>
+          {{/if}}
+
+          {{#if title}}
+            <div class="my-title-container {{titleContainerClass}}">
+              <h1 class='my-page-title {{titleClass}}'>{{title}}</h1>
+              <p class="my-page-credits {{creditClass}}">{{credits}}</p>
+            </div>
+          {{/if}}
+
+          {{#each texts}}
+            <p class='my-page-free-text {{classname}}'>{{data}}</p>
+          {{/each}}
+
+          {{#each textblocks}}
+            <div class="my-text-block {{blockClass}}">
+              {{#if blockTitle}}
+                <h2 class='my-block-title {{blockTitleClass}}'>{{blockTitle}}</h2>
+              {{/if}}
+              {{#each blockTexts}}
+                <p class='my-block-texts {{classname}}'>
+                  <span class='my-text-tag {{tagClass}}'>{{tag}}</span>
+                  <span class='my-text-value {{valueClass}}'>{{value}}</span>
+                </p>
+              {{/each}}
+            </div>
+          {{/each}}
+        </div>
+      {{/if}}
+    </script>
+
+    <script type="text/javascript" src="content.js"></script>
+  </body>
+</html>
