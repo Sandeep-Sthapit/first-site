@@ -24,7 +24,7 @@ body {
   position: absolute;
   z-index: 9999;
   top: 50%;
-  height: 5%;
+  height: 3%;
   cursor: pointer;
   transform: translateY(-50%);
 }
@@ -33,10 +33,10 @@ body {
   -webkit-filter: drop-shadow(0rem 0rem 0.5rem rgba(255, 255, 255,0.8));
 }
 #next-arrow{
-  right: 2.5%;
+  right: 1%;
 }
 #prev-arrow{
-  left: 2.5%;
+  left: 1%;
 }
 .arrow-item{
   width: auto;
@@ -46,7 +46,7 @@ body {
   position: absolute;
   z-index: 9999;
   top: 50%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: white;
   right: 6.5%;
@@ -61,8 +61,8 @@ body {
 }
 #replay-button{
   display: none;
-  right: 2%;
-  height: 5%;
+  right: 0.5%;
+  height: 3%;
 }
 
 
@@ -220,7 +220,7 @@ body {
   background-color: black;
   background-position: center;
   /*background-size: auto 100%;*/
-  background-size: 40% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .my-page-overlay{
@@ -239,8 +239,8 @@ body {
 
 .my-title-container{
   position: absolute;
-  width: 40%;
-  left: 30%;
+  width: 90%;
+  left: 5%;
   bottom: 2.5%;
 }
 .my-title-container>*{
@@ -263,8 +263,8 @@ body {
 .my-page-free-text{
   position: absolute;
   top: 50%;
-  left: 30%;
-  width: 40%;
+  left: 5%;
+  width: 90%;
   transform: translateY(-50%);
   color: white;
   font-size: 1.4rem;
@@ -273,8 +273,8 @@ body {
 .my-text-block{
   position: absolute;
   top: 50%;
-  left: 30%;
-  width: 40%;
+  left: 5%;
+  width: 90%;
   transform: translateY(-50%);
   color: white;
   padding: 0 1.5rem;
@@ -393,10 +393,39 @@ body {
 
 @media (min-width: 640px){
   #next-read-more{
+    font-size: 1rem;
     right: 6%;
   }
   .related-stories-link, #my-credits>div{
     width: 50%;
+  }
+  .my-page{
+    background-size: 50% auto;
+  }
+  .my-title-container{
+    left: 25%;
+    width: 50%;
+  }
+  .my-page-free-text{
+    left: 25%;
+    width: 50%;
+  }
+  .my-text-block{
+    left: 25%;
+    width: 50%;
+  }
+  #next-arrow{
+    right: 2.5%;
+    height: 5%;
+  }
+  #prev-arrow{
+    left: 2.5%;
+    height: 5%;
+  }
+
+  #replay-button{
+    right: 2%;
+    height: 5%;
   }
 }
 @media (min-width: 960px) {
@@ -406,6 +435,22 @@ body {
   .related-stories-link, #my-credits>div{
     width: 33%;
   }
+
+  .my-page{
+    background-size: 40% auto;
+  }
+  .my-title-container{
+    left: 30%;
+    width: 40%;
+  }
+  .my-page-free-text{
+    left: 30%;
+    width: 40%;
+  }
+  .my-text-block{
+    left: 30%;
+    width: 40%;
+  }
 }
 @media  only screen and  (min-width: 952px) {
   #next-read-more{
@@ -413,6 +458,22 @@ body {
   }
   .related-stories-link, #my-credits>div{
     width: 50%;
+  }
+
+  .my-page{
+    background-size: 40% auto;
+  }
+  .my-title-container{
+    left: 30%;
+    width: 40%;
+  }
+  .my-page-free-text{
+    left: 30%;
+    width: 40%;
+  }
+  .my-text-block{
+    left: 30%;
+    width: 40%;
   }
 }
 
@@ -422,5 +483,21 @@ body {
   }
   .related-stories-link, #my-credits>div{
     width: 33%;
+  }
+
+  .my-page{
+    background-size: 40% auto;
+  }
+  .my-title-container{
+    left: 30%;
+    width: 40%;
+  }
+  .my-page-free-text{
+    left: 30%;
+    width: 40%;
+  }
+  .my-text-block{
+    left: 30%;
+    width: 40%;
   }
 }
