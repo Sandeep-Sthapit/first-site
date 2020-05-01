@@ -26,7 +26,7 @@
         },
         {
           "question": "How does coughing spread COVID-19?",
-          "answer": "One cough can fire 3000 droplets into the air and if the person who coughed has COVID-19, then they will be firing millions of virus particles into the air. These may be inhaled by someone close by, or may land on solid surfaces that become contaminated. Watch this simulation to see how far viruses can be spread by a cough. That is why it is important to cover your mouth when sneezing and coughing. Always wear a mask when you go out, and keep your distance."
+          "answer": "One cough can fire 3000 droplets into the air and if the person who coughed has COVID-19, then they will be firing millions of virus particles into the air. These may be inhaled by someone close by, or may land on solid surfaces that become contaminated. Watch <a href='https://www.nytimes.com/interactive/2020/04/14/science/coronavirus-transmission-cough-6-feet-ar-ul.html' target='_blank'>this simulation</a> to see how far viruses can be spread by a cough. That is why it is important to cover your mouth when sneezing and coughing. Always wear a mask when you go out, and keep your distance."
         },
         {
           "question": "What is better for cleaning the hands, alcohol-based sanitizer gel or soap and water?",
@@ -79,7 +79,7 @@
         },
         {
           "question": "Suppose I get sick with COVID-19 but then I recover and do well, would I still be a risk to others that I hang out with?",
-          "answer": "The first 14 days after you catch the virus is the period when you are at the highest risk of infecting others. If you have been sick, and it has been at least 14 days since you stopped having any lingering symptoms, such as a cough, you should be able to behave normally. However, you should take care around people who may be more vulnerable.</br></br>If you are hospitalized, you will be discharged only after you test negative for the virus over a period of time, and are no longer able to infect others. When leaving the hospital, you may still be advised to isolateyourself for an additional 14 days to ensure you do not put anyone at risk."
+          "answer": "The first 14 days after you catch the virus is the period when you are at the highest risk of infecting others. If you have been sick, and it has been at least 14 days since you stopped having any lingering symptoms, such as a cough, you should be able to behave normally. However, you should take care around people who may be more vulnerable.</br></br>If you are hospitalized, you will be discharged only after you test negative for the virus over a period of time, and are no longer able to infect others. When leaving the hospital, you may still be advised to isolate yourself for an additional 14 days to ensure you do not put anyone at risk."
         },
         {
           "question": "Is there any chance of not having any symptoms even after getting infected with COVID-19?",
@@ -94,7 +94,7 @@
           "answer": "Lab test is the only verifiable way to confirm whether the person has COVID-19. To be on the safe side, before they can be tested, we should assume they are infected and maintain physical distancing."
         },
         {
-          "question": "What is meant by mild COVID-19 symptoms? And how it is different from common cold and seasonal flu?",
+          "question": "What is meant by mild COVID-19 symptoms? And how is it different from common cold and seasonal flu?",
           "answer": "Mild symptoms mean a slight cough and maybe a sore throat. It is not easy to distinguish from other respiratory infections."
         },
         {
@@ -160,7 +160,7 @@
         },
         {
           "question": "Does working-out help?",
-          "answer": "Exercise makes you feel better in your mood and improves your overall health.  Exercise is said to boost immunity and provide other health benefits . Yoga and other exercises that make you breathe deeply and efficiently. Do not exercise heavily if you have a fever, cough and difficulty in breathing. WHO recommends how to exercise safely during the current pandemic. https://www.who.int/news-room/q-a-detail/be-active-during-covid-19 "
+          "answer": "Exercise makes you feel better in your mood and improves your overall health.  Exercise is said to boost immunity and provide other health benefits.  Yoga and other exercises that make you breathe deeply and efficiently.  Do not exercise heavily if you have a fever, cough and difficulty in breathing. WHO recommends <a href='https://www.who.int/news-room/q-a-detail/be-active-during-covid-19' target='_blank'>how to exercise safely</a> during the current pandemic."
         },
         {
           "question": "How risky is running outside during this lockdown for fitness?",
@@ -180,11 +180,11 @@
         },
         {
           "question": "Are people who have recovered from COVID-19 immune from contracting it again?",
-          "answer": "Countries across the world are hoping that recovered people have immunity so everyone can get back to work. However, the WHO has warned against assuming that someone who has had the virus and produced antibodies is immune.</br></br>Even if people are immune once they recover, there is the question of how long they are immune. This coronavirus is closest to the one that caused SARS, where immunity lasted 2-3 years, but immunity to this could also work like the coronavirus that causes the common cold, where immunity only lasts a few months. In short, we don’t know yet, and research is ongoing on this important question.</br></br>A few patients also seem to be suffering from symptoms again after recovery. However, this could also mean that the earlier result was incorrect."
+          "answer": "Countries across the world are hoping that recovered people have immunity so everyone can get back to work. However, the WHO has warned against assuming that someone who has had the virus and produced antibodies is immune.</br></br>Even if people are immune once they recover, there is the question of how long they are immune. This coronavirus is closest to the one that caused SARS, <a href='https://www.wired.com/story/covid-19-immunity/' target='_blank'>where immunity lasted 2-3 years</a>, but immunity to this could also work like the coronavirus that causes the common cold, where immunity only lasts a few months. In short, we don’t know yet, and research is ongoing on this important question.</br></br>A few patients also seem to be suffering from symptoms again after recovery. However, this could also mean that the earlier result was incorrect."
         },
         {
           "question": "Recent news showed that people treated and cured have been found to be COVID-19 positive later. What might be the reason behind that?",
-          "answer": "There are reports from some countries, especially South Korea and China of people who fully recovered from the virus testing positive for a second time. This could be because their previous test was a mistake, and they have not cleared the virus from their system yet. Scientists are also exploring the possibility that the virus stayed in their system and was re-activated. This is a new virus, sowe are finding out more each day.</br></br>In other cases this could be because they still had fragments of the defeated virus in their system. Often tests stay positive after someone has recovered because of this. A continuing positive PCR may not mean they are still able to infect others."
+          "answer": "There are reports from some countries, especially South Korea and China of people who fully recovered from the virus testing positive for a second time. This could be because their previous test was a mistake, and they have not cleared the virus from their system yet. Scientists are also exploring the possibility that the virus stayed in their system and was re-activated. This is a new virus, sowe are finding out more each day.</br></br>In other cases this could be because they still had fragments of the defeated virus in their system. Often tests stay positive after someone has recovered because of this. A <a href='https://www.cnnphilippines.com/world/2020/4/18/coronavirus-patients-reinfection.html' target='_blank'>continuing positive PCR</a> may not mean they are still able to infect others."
         },
         {
           "question": "Can the plasma from recovered patients be used for curing others?",
