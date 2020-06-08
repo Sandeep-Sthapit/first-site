@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha256-usTqAE1ywvdMtksWzdeWzD75MsfJN0h0U7y2NtZL3N0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+  </head>
+
+  <body>
+   
+
+    <script id="createScore" type="text/x-handlebars-template">
+      <div id="questions-tracker">
+        {{#each this}}
+          <div class="question-track-item tracker-{{@index}}"></div>
+        {{/each}}
+      </div>      
+    </script>
+
+    <script id="createQuestions" type="text/x-handlebars-template">
+      {{#if instruction}}
+
+        <div id="instruction-page">
+          <h1 id="instruction-title">{{question}}</h1>
+          <div class="instruction-block">
+            <p class="instruction-text">{{explanation}}</p>
+            <button id="next-button" class="enter-quiz">Start Quiz</button>
+          </div>
+        </div>
+
+      {{else}}
+
+        <div id="question-page">
+          <p id="question-number-indicator">Question 1 of 15</p>
+          <div class="question-block">
+            <p class="explanation-text">{{explanation}}</p>
+            <div class="qna-block">
+              <p class="question-text">{{question}}</p>
+              <div id="answer-block">
+                <p class="answer-option answer-text correct-answer">{{correct}}</p>
+                {{#each other}}
+                  <p class="answer-option answer-text">{{this}}</p>
+                {{/each}}
+              </div>
+            </div>
+            <button id="next-button" class="next-question">Next</button>
+          </div>
+        </div>
+
+      {{/if}}
+    </script>
+    <div class="content">
+      <div id='quiz-content'>
+        <!-- <div id="instruction-page">
+          <h1 id="instruction-title">How does Covid-19 spread?</h1>
+          <div class="instruction-block">
+            <p class="instruction-text">In recent months, the coronavirus outbreak centered in China has caused global concern. Covid-19, as the disease is known, originated in Wuhan, China, in December 2019. Millions of cases have been confirmed throughout the world. Authorities are now trying to stop the virus from spreading further, restricting millions of people from traveling and enforcing strict lockdowns. Have you educated yourself regarding the coronavirus and how to protect yourself during this outbreak? Take this quiz to find out how ready you are.</p>
+            <button class="enter-quiz">Start Quiz</button>
+          </div>
+        </div> -->
+
+        <!-- <div id="question-page">
+          <p id="question-number-indicator">Question 1 of 15</p>
+          <div class="question-block">
+            <p class="question-text">What is the full name of the virus that is causing the global pandemic?</p>
+            <div class="answer-block">
+              <p class="answer-text correct-answer">Novel Coronavirus</p>
+              <p class="answer-text">COVID-19</p>
+              <p class="answer-text">Sars-CoV-2</p>
+              <p class="answer-text">nCoV</p>
+            </div>
+            <button class="next-button">Next</button>
+          </div>
+        </div> -->
+
+      </div>
+      <div id="tracker-section"></div>
+    </div>
+    <script type="text/javascript" src="quiz.js"></script>
+  </body>
+</html>
