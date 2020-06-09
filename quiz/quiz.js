@@ -29,8 +29,11 @@ $(document).ready(function(){
 		$.when($('#tracker-section').html(scoreData)).done(function(){
 			//add events on click
 			$(".question-track-item").on('click', function(event) {
-				console.log($(this).attr('class'));
+				// console.log($(this).attr('class'));
 			});
+			for (var i=0; i<total_question_count; i++){
+				$('.tracker-'+i+'>p').text((i+1));
+			}
 		});
 	}
 
@@ -51,20 +54,20 @@ $(document).ready(function(){
 			});
 			var options = shuffle(others);
 			if(options.length >= 4) {
-				console.log(options);
+				// console.log(options);
 				options = options.slice(0, 3);
 			}
 			currentData.other = shuffle(options);
-			console.log(options);
+			// console.log(options);
 		}
 
-		console.log(currentData)
+		// console.log(currentData);
 
 		var quizHTML = $('#createQuestions').html();
 		var quizTemplate = Handlebars.compile(quizHTML);
 		var quizData = quizTemplate(currentData);
 
-		console.log(quizData)
+		// console.log(quizData)
 		$.when($('#quiz-content').html(quizData)).done(function(){
 			
 			if(isQuestion){
@@ -78,16 +81,17 @@ $(document).ready(function(){
 				}
 
 				$(".answer-option").on('click', function(event) {
-					console.log('here');
+					$('.tracker-'+(count-1)).removeClass('active-tracker');
 					if($(this).hasClass('correct-answer')){
 						$(this).css('background-color', "green");
 						$(".answer-option").css("pointer-events", "none");
 						if(!wrongClicked){	
 							$('.tracker-'+(count-1)).css('background-color', 'green');
+							$('.tracker-'+(count-1)).css('color', 'white');
 						}
 						if(hasExplanation){
 							quesTimeout = setTimeout(function(){
-								$('.qna-block').fadeOut(500, function(){
+								$('#answer-block').fadeOut(500, function(){
 									$('.explanation-text').fadeIn(500, function(){
 									});
 									$("#next-button").fadeIn(500);
@@ -97,11 +101,13 @@ $(document).ready(function(){
 							$("#next-button").show(0);
 						}
 					} else{
-						$(this).css('background-color', "red");
+						$(this).css('background-color', "#2F3E46");
 						$(this).css("pointer-events", "none");
 						if(!wrongClicked){	
-							$('.tracker-'+(count-1)).css('background-color', 'red');
+							$('.tracker-'+(count-1)).css('background-color', '#2F3E46');
+							$('.tracker-'+(count-1)).css('color', 'white');
 						}	
+						wrongClicked = true;
 					}
 				});
 			}

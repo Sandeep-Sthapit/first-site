@@ -17,7 +17,7 @@
     <script id="createScore" type="text/x-handlebars-template">
       <div id="questions-tracker">
         {{#each this}}
-          <div class="question-track-item tracker-{{@index}}"></div>
+          <div class="question-track-item tracker-{{@index}}"><p></p></div>
         {{/each}}
       </div>      
     </script>
@@ -38,9 +38,9 @@
         <div id="question-page">
           <p id="question-number-indicator">Question 1 of 15</p>
           <div class="question-block">
-            <p class="explanation-text">{{explanation}}</p>
             <div class="qna-block">
               <p class="question-text">{{question}}</p>
+              <p class="explanation-text">{{explanation}}</p>
               <div id="answer-block">
                 <p class="answer-option answer-text correct-answer">{{correct}}</p>
                 {{#each other}}
