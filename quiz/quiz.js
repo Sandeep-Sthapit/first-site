@@ -103,9 +103,9 @@ $(document).ready(function(){
 			$("#tracker-section").hide();
 			$('.score-text').text("You scored " + score + ' out of ' + total_question_count + '.');
 
-			$("#share-button").on('click', function(event) {
+			// $("#share-button").on('click', function(event) {
 				
-			});
+			// });
 		});
 	}
 
