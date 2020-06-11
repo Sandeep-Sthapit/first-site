@@ -243,16 +243,16 @@ html, body {
   position: relative;
   border: none;
   border-radius: 0.4rem;
-  background-color: #354F52;
   font-family: 'Calibri', sans-serif;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
   margin: 1rem 0;
-  padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
-  color: white;
+  display: flex;
+  justify-content: center;
 }
+
 
 /*
   font-family: 'Calibri', sans-serif;
