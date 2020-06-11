@@ -191,6 +191,69 @@ html, body {
   background-color: #F0F3BD;
   color: black;
 }
+
+
+#score-container{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+.score-text{
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Calibri', sans-serif;
+  color: #2F3E46;
+}
+.badge-text{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Calibri', sans-serif;
+  color: #2F3E46;
+}
+.score-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #333;
+  border-radius: 0.5rem; 
+  background-color: #F0F3BD;
+  left: 50%;
+  width: 40vh;
+  transform: translateX(-50%);
+}
+.score-img{
+  position: relative;
+  width: 30vh;
+  margin: 1rem 0;
+}
+.character-tag{
+  position: relative;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Calibri', sans-serif;
+  color: #2F3E46;
+}
+#share-button{
+  cursor: pointer;
+  position: relative;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #354F52;
+  font-family: 'Calibri', sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
 /*
   font-family: 'Calibri', sans-serif;
   font-family: 'Poppins', sans-serif;

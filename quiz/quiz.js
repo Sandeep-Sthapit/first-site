@@ -2,9 +2,22 @@ $(document).ready(function(){
 	//to read data
 	var data;
 	var count = 0;
-	const total_question_count = 15;
+	var score = 0;
+	const total_question_count = 10;
 	var total;
 	var quesTimeout;
+	var next_question;
+
+	var lvl1, lvl2, lvl3;
+	var current_level;
+
+	var lvl1_correct = 0;
+	var lvl2_correct = 0;
+	var lvl3_correct = 0;
+
+	var badge_url;
+	var character;
+	var badge;
 
 	$.ajax({
 	  type: "GET",  
@@ -13,11 +26,54 @@ $(document).ready(function(){
 	  success: function(response)  
 	  {
 		data = $.csv.toObjects(response);
-		var questions = getRandom(data.slice(1), total_question_count);
-		total = data.slice(0,1).concat(questions);
+
+		instruction = data.filter(function (el) {
+		  return el.category == "Instruction";
+		})[0];
+
+		lvl1 = data.filter(function (el) {
+		  return el.difficulty == 1;
+		});
+		lvl2 = data.filter(function (el) {
+		  return el.difficulty == 2;
+		});
+		lvl3 = data.filter(function (el) {
+		  return el.difficulty == 3;
+		});
+
+		lvl1 = shuffle(lvl1);
+		lvl2 = shuffle(lvl2);
+		lvl3 = shuffle(lvl3);
+
+		var questions = []
+		for(var i=0; i<total_question_count; i++){
+			questions.push(null);
+		}
+
+		current_level = 1;
+		next_question = instruction;
 
 		generateTrackers(questions);
-		generateQuestions(total, count);
+		generateQuestions(next_question, count);
+	  }   
+	});
+
+	//load badges
+	$.ajax({
+	  type: "GET",  
+	  url: "badges.csv",
+	  dataType: "text",       
+	  success: function(response)  
+	  {
+		var badges = $.csv.toObjects(response);
+		var random_badge = shuffle(badges)[0]
+
+		badge_url = random_badge.url;
+		character = random_badge.character;
+
+		badge = {"url": badge_url, "character": character}
+		// console.log(badge_url)
+		// console.log(character)
 	  }   
 	});
 
@@ -37,8 +93,24 @@ $(document).ready(function(){
 		});
 	}
 
+	function generateBadge(myData){
+		var badgeHTML = $('#createBadge').html();
+		var badgeTemplate = Handlebars.compile(badgeHTML);
+		var badgeData = badgeTemplate(myData);
+
+		$.when($('#quiz-content').html(badgeData)).done(function(){
+			//add events on click
+			$("#tracker-section").hide();
+			$('.score-text').text("You scored " + score + ' out of ' + total_question_count + '.');
+
+			$("#share-button").on('click', function(event) {
+				
+			});
+		});
+	}
+
 	function generateQuestions(myData, myCount){
-		var currentData = myData[myCount];
+		var currentData = myData;
 		var isQuestion = true;
 		var hasExplanation = true;
 		if(currentData.category.trim() == "" ){
@@ -76,19 +148,21 @@ $(document).ready(function(){
 				var wrongClicked = false;
 				$('#question-number-indicator').text('Question '+ String(count) +' of '+ String(total_question_count));
 				shuffleOptions('answer-block', 'answer-text');
-				if(count == total_question_count){
-					$("#next-button").text('Play Again');
-				}
 
 				$(".answer-option").on('click', function(event) {
 					$('.tracker-'+(count-1)).removeClass('active-tracker');
 					if($(this).hasClass('correct-answer')){
+
 						$(this).css('background-color', "green");
 						$(".answer-option").css("pointer-events", "none");
+
 						if(!wrongClicked){	
+							score++;
+							on_correct_counter(current_level);
 							$('.tracker-'+(count-1)).css('background-color', 'green');
 							$('.tracker-'+(count-1)).css('color', 'white');
 						}
+
 						if(hasExplanation){
 							quesTimeout = setTimeout(function(){
 								$('#answer-block').fadeOut(500, function(){
@@ -113,19 +187,45 @@ $(document).ready(function(){
 			}
 
 			$("#next-button").on('click', function(event) {
+				next_question = get_next_question(current_level);
 				if(count == total_question_count){
-					location.reload();
+					generateBadge(badge);
 					return false;
 				} else{
 					count++;
 					$(this).hide(0);
-					generateQuestions(total, count);
+					generateQuestions(next_question, count);
 				}
 			});
 		});
 
 	}
 
+	function get_next_question(lvl){
+		if(lvl == 1){
+			return lvl1.pop(); 
+		}else if(lvl == 2){
+			return lvl2.pop(); 
+		}else if(lvl == 3){
+			return lvl3.pop(); 
+		}
+	}
+
+	function on_correct_counter(lvl){
+		if(current_level == 1){
+			lvl1_correct++;
+		}else if(current_level == 2){
+			lvl2_correct++;
+		}else if(current_level == 3){
+			lvl3_correct++;
+		}
+		if(lvl1_correct == 5){
+			current_level = 2;
+		}
+		if(lvl2_correct == 3){
+			current_level = 3;
+		}
+	}
 
 	
 	function getRandom(arr, n) {
