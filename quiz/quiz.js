@@ -74,6 +74,7 @@ $(document).ready(function(){
 		badge = {"url": badge_url, "character": character}
 		// console.log(badge_url)
 		// console.log(character)
+	  	console.log(badge)
 	  }   
 	});
 
@@ -88,7 +89,7 @@ $(document).ready(function(){
 				// console.log($(this).attr('class'));
 			});
 			for (var i=0; i<total_question_count; i++){
-				$('.tracker-'+i+'>p').text((i+1));
+				// $('.tracker-'+i+'>p').text((i+1));
 			}
 		});
 	}
@@ -101,11 +102,12 @@ $(document).ready(function(){
 		$.when($('#quiz-content').html(badgeData)).done(function(){
 			//add events on click
 			$("#tracker-section").hide();
-			$('.score-text').text("You scored " + score + ' out of ' + total_question_count + '.');
+			$('#user-score').text(score);
+			$('#total-ques').text(total_question_count);
 
-			// $("#share-button").on('click', function(event) {
+			$("#share-button").on('click', function(event) {
 				
-			// });
+			});
 		});
 	}
 
@@ -113,12 +115,16 @@ $(document).ready(function(){
 		var currentData = myData;
 		var isQuestion = true;
 		var hasExplanation = true;
+		$('#tracker-section').show(0);
+		$('.content').removeClass('covid-img');
 		if(currentData.category.trim() == "" ){
 			hasExplanation = false;
 		}
 		if (currentData.category == "Instruction") {
 			currentData.instruction = true;
 			isQuestion = false;
+			$('#tracker-section').hide(0);
+			$('.content').addClass('covid-img');
 		} else{
 			var otheroptions = [currentData.other1, currentData.other2, currentData.other3, currentData.other4, currentData.other5];
 			var others = otheroptions.filter(function (el) {
@@ -146,40 +152,38 @@ $(document).ready(function(){
 				$('.tracker-'+(count-2)).removeClass('active-tracker');
 				$('.tracker-'+(count-1)).addClass('active-tracker');
 				var wrongClicked = false;
-				$('#question-number-indicator').text('Question '+ String(count) +' of '+ String(total_question_count));
+				$('#question-number-indicator').text('Question '+ String(count) +'/'+ String(total_question_count));
 				shuffleOptions('answer-block', 'answer-text');
 
 				$(".answer-option").on('click', function(event) {
 					$('.tracker-'+(count-1)).removeClass('active-tracker');
 					if($(this).hasClass('correct-answer')){
 
-						$(this).css('background-color', "green");
+						$(this).addClass('correct-ans')
 						$(".answer-option").css("pointer-events", "none");
 
 						if(!wrongClicked){	
 							score++;
 							on_correct_counter(current_level);
-							$('.tracker-'+(count-1)).css('background-color', 'green');
-							$('.tracker-'+(count-1)).css('color', 'white');
+							$('.tracker-'+(count-1)).css('background-color', '#59C057');
+							$('.tracker-'+(count-1)).css('border', 'none');
 						}
 
 						if(hasExplanation){
 							quesTimeout = setTimeout(function(){
-								$('#answer-block').fadeOut(500, function(){
-									$('.explanation-text').fadeIn(500, function(){
-									});
-									$("#next-button").fadeIn(500);
+								$('.explanation-text').fadeIn(500, function(){
 								});
+								$("#next-button").fadeIn(500);
 							}, 500);							
 						} else{
 							$("#next-button").show(0);
 						}
 					} else{
-						$(this).css('background-color', "#2F3E46");
+						$(this).addClass('incorrect-ans')
 						$(this).css("pointer-events", "none");
 						if(!wrongClicked){	
-							$('.tracker-'+(count-1)).css('background-color', '#2F3E46');
-							$('.tracker-'+(count-1)).css('color', 'white');
+							$('.tracker-'+(count-1)).css('background-color', '#F95841');
+							$('.tracker-'+(count-1)).css('border', 'none');
 						}	
 						wrongClicked = true;
 					}
@@ -190,6 +194,8 @@ $(document).ready(function(){
 				next_question = get_next_question(current_level);
 				if(count == total_question_count){
 					generateBadge(badge);
+					$('#quiz-content').css('top', '0');
+					$('#quiz-content').css('height', '100%');
 					return false;
 				} else{
 					count++;

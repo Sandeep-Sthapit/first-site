@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Didact+Gothic&display=swap');
 
 
 * {box-sizing: border-box;}
@@ -13,31 +14,47 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #CAD2C5;
+  background-color: #FBF9D2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #quiz-content{
   position: relative;
   width: 100%;
+  top: 7.5%;
 }
 #tracker-section{
   position: sticky;
-  width: 100%;
-  top: 90%;
+  left: 10%;
+  width: 80%;
+  top: 5%;
   height: 10%;
-  background-color: #69A297;
   padding: 0;
   overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid #0BCBB0;
+}
+.covid-img{
+  background-image: url('https://res.cloudinary.com/sandeepsthapit/image/upload/v1595579929/Website/covid-quiz-bg.png');
 }
 
-#instruction-page{
+#instruction-page{    
+  position: relative;
+  width: 100%;
+  height: 100%;
   padding: 5% 0;
 }
 #instruction-title{
   position: relative;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   width: 100%;
   text-align: center;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
 }
 .instruction-block{
   position: relative;
@@ -52,18 +69,20 @@ html, body {
 
 .instruction-text{
   border: 0.2rem solid #354F52;
-  background-color: #84A98C;
-  font-family: 'Calibri', sans-serif;
+  background-color: #A0E8CA;
+  border: none;
   margin: 2% 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 2% 4%;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .enter-quiz, .next-question{
   border: none;
   border-radius: 0.4rem;
-  background-color: #354F52;
-  font-family: 'Calibri', sans-serif;
+  background-color: #DA36A2;
+  color: white;
+  font-family: 'Arvo', serif;
 }
 
 .enter-quiz{
@@ -76,7 +95,10 @@ html, body {
   color: white;
 }
 .enter-quiz:hover{
-  filter: brightness(150%);
+  /*filter: brightness(150%);*/
+
+  background-color: #FFD600;
+  border: none;
 }
 
 
@@ -89,11 +111,9 @@ html, body {
 }
 #question-number-indicator{
   position: relative;
-  width: 100%;
-  font-size: 2.4rem;
-  font-family: 'Calibri', sans-serif;
-  color: #2F3E46;
-  border-bottom: 1px solid #555;
+  font-size: 2rem;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #333;
 }
 .question-block{
   position: relative;
@@ -105,17 +125,20 @@ html, body {
   font-size: 1.5rem;
   padding-top: 0;
   margin-top: 0;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   color: #444;
 }
 #answer-block{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  margin: 1rem 5%;
+  margin: 1rem;
+  margin-left: 0;
+  margin-right: 2.5%;
   font-size: 1.2rem;
   width: 90%;
   flex-flow: wrap;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .answer-option{
@@ -124,21 +147,33 @@ html, body {
   margin: 1% 2.5%;
 }
 .answer-option:hover{
-  filter: brightness(125%);
+  background-color: #FFD600;
+  border: none;
 }
 
 .answer-text{
-  background-color: #52796F;
-  color: #FFF;
+  background-color: white;
+  color: #333;
+  border: 1px solid #26D1B9;
   padding: 0.75rem;
-  border-radius: 4px;
+  border-radius: 8px;
+  margin-left: 0;
+}
+.correct-ans{
+  background-color: #59C057;
+  border-color: #59C057;
+  color: white;
+}
+.incorrect-ans{
+  background-color: #FA9B80;
+  border-color: #F96854;
+  color: white;
 }
 
 .explanation-text{
   display: none;
-  border: 0.2rem solid #354F52;
-  background-color: #84A98C;
-  font-family: 'Calibri', sans-serif;
+  background-color: #A0E8C7;
+  font-family: 'Didact Gothic', sans-serif;
   margin: 2% 0;
   font-size: 1.3rem;
   padding: 2% 4%;
@@ -151,20 +186,22 @@ html, body {
   left: 85%;
   width: auto;
   margin: 2% 0;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2.5rem;
   font-size: 1.5rem;
   color: white;
+  background-color: #03BEA3;
 }
 .next-question:hover{
-  filter: brightness(125%);
+  /*filter: brightness(125%);*/
+
+  background-color: #FFD600;
+  border: none;
 }
 
 
 #questions-tracker{
-  position: absolute;
-  width: 90%;
+  position: relative;
   height: 100%;
-  left: 5%;
   margin: 0;
   display: flex;
   justify-content: flex-start;
@@ -174,14 +211,19 @@ html, body {
 }
 .question-track-item{
   position: relative;
-  margin: 0;
-  height: 100%;
+  margin: 0 0.3rem;
+  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /*width: 2.5rem;*/
-  font-size: 1.5rem;
+  /* width: 2.5rem; */
+  /* font-size: 1.5rem; */
   color: white;
+  border: 1px solid gold;
+  border-radius: 50%;
+  background-color: white;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .question-track-item>p{
   text-align: center;
@@ -200,18 +242,22 @@ html, body {
   width: 100%;
   height: 100%;
   padding: 5%;
+  background-position: center;
+  background-image: url('https://res.cloudinary.com/sandeepsthapit/image/upload/v1595583289/Website/badge-bg.png');
 }
 .score-text{
   text-align: center;
-  font-size: 2rem;
-  font-family: 'Calibri', sans-serif;
-  color: #2F3E46;
+  font-size: 3rem;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+  color: #111;
 }
+
 .badge-text{
   text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Calibri', sans-serif;
-  color: #2F3E46;
+  font-size: 2rem;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #111;
 }
 .score-card{
   position: relative;
@@ -219,9 +265,9 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0.1rem solid #333;
+  border: 0.1rem solid #FFD600;
   border-radius: 0.5rem; 
-  background-color: #F0F3BD;
+  background-color: #FBF9D2;
   left: 50%;
   width: 40vh;
   transform: translateX(-50%);
@@ -229,31 +275,41 @@ html, body {
 .score-img{
   position: relative;
   width: 30vh;
-  margin: 1rem 0;
+  margin: 2rem 0;
+  margin-bottom: 0;
 }
 .character-tag{
   position: relative;
   text-align: center;
-  font-size: 1.3rem;
-  font-family: 'Calibri', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  font-family: 'Didact Gothic', sans-serif;
   color: #2F3E46;
 }
 #share-button{
   cursor: pointer;
   position: relative;
-  border: none;
-  border-radius: 0.4rem;
-  font-family: 'Calibri', sans-serif;
+  text-decoration: underline;
+  color: #DA36A2;
+  font-family: 'Didact Gothic', sans-serif;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
 }
-
-
+#share-button a{
+  color: #DA36A2 !important;
+}
+#share-button a:hover{
+  color: #FFD600;
+}
+.hl-num{
+  color: #DA36A2;
+  font-size: 3.5rem;
+}
 /*
   font-family: 'Calibri', sans-serif;
   font-family: 'Poppins', sans-serif;
