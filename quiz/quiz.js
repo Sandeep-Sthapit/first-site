@@ -70,11 +70,12 @@ $(document).ready(function(){
 
 		badge_url = random_badge.url;
 		character = random_badge.character;
+		description = random_badge.description;
 
-		badge = {"url": badge_url, "character": character}
+		badge = {"url": badge_url, "character": character, "description": description}
 		// console.log(badge_url)
 		// console.log(character)
-	  	console.log(badge)
+	  	// console.log(badge)
 	  }   
 	});
 
@@ -99,6 +100,10 @@ $(document).ready(function(){
 		var badgeTemplate = Handlebars.compile(badgeHTML);
 		var badgeData = badgeTemplate(myData);
 
+		//for the bg image
+		$('.bg-image').addClass('score-bg-img');
+		$('.content').css('background-color', 'transparent');
+
 		$.when($('#quiz-content').html(badgeData)).done(function(){
 			//add events on click
 			$("#tracker-section").hide();
@@ -116,7 +121,8 @@ $(document).ready(function(){
 		var isQuestion = true;
 		var hasExplanation = true;
 		$('#tracker-section').show(0);
-		$('.content').removeClass('covid-img');
+		$('.bg-image').removeClass('covid-img');
+		$('.content').css('background-color', '#FBF9D2');
 		if(currentData.category.trim() == "" ){
 			hasExplanation = false;
 		}
@@ -124,7 +130,8 @@ $(document).ready(function(){
 			currentData.instruction = true;
 			isQuestion = false;
 			$('#tracker-section').hide(0);
-			$('.content').addClass('covid-img');
+			$('.bg-image').addClass('covid-img');
+			$('.content').css('background-color', 'transparent');
 		} else{
 			var otheroptions = [currentData.other1, currentData.other2, currentData.other3, currentData.other4, currentData.other5];
 			var others = otheroptions.filter(function (el) {
@@ -159,8 +166,9 @@ $(document).ready(function(){
 					$('.tracker-'+(count-1)).removeClass('active-tracker');
 					if($(this).hasClass('correct-answer')){
 
-						$(this).addClass('correct-ans')
 						$(".answer-option").css("pointer-events", "none");
+						// $(this).addClass('correct-ans');
+						$(this).css({'background-color': '#59C057', 'border-color': '#59C057',  'color': 'white'});
 
 						if(!wrongClicked){	
 							score++;
@@ -171,16 +179,17 @@ $(document).ready(function(){
 
 						if(hasExplanation){
 							quesTimeout = setTimeout(function(){
-								$('.explanation-text').fadeIn(500, function(){
+								$('.explanation-text').fadeIn(250, function(){
 								});
-								$("#next-button").fadeIn(500);
+								$("#next-button").fadeIn(250);
 							}, 500);							
 						} else{
 							$("#next-button").show(0);
 						}
 					} else{
-						$(this).addClass('incorrect-ans')
 						$(this).css("pointer-events", "none");
+						// $(this).addClass('incorrect-ans');
+						$(this).css({'background-color': '#FA9B80', 'border-color': '#FA9B80',  'color': 'white'});
 						if(!wrongClicked){	
 							$('.tracker-'+(count-1)).css('background-color', '#F95841');
 							$('.tracker-'+(count-1)).css('border', 'none');
