@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Mind Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script> -->
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js" integrity="sha256-Xb6SSzhH3wEPC4Vy3W70Lqh9Y3Du/3KxPqI2JHQSpTw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha256-usTqAE1ywvdMtksWzdeWzD75MsfJN0h0U7y2NtZL3N0=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="total-container">
+      <div id="graph-container">
+      </div>
+      <!-- animate this container like its expanding from side -->
+      <div id="details-container">
+        <!-- <button id="close-details">&#10005</button> -->
+        <div id="details-box">
+          <!-- template goes here -->
+        </div>
+      </div>
+    </div>
+    <script id="createDescription" type="text/x-handlebars-template">
+      <h1 class="node-title">{{id}}</h1>
+      <div class="description">
+        {{#each description}}
+          <p class="description-text">{{this}}</p>
+        {{/each}}
+      </div>
+      <a class="learn-more" href="{{link}}" target="_blank"><p>Learn more</p></a>
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

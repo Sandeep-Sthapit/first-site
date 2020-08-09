@@ -1,0 +1,419 @@
+{
+  "data": {
+    "id": "Artificial Intelligence",
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+    "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+  },
+  "children": [
+    {
+      "data": {
+        "id": "Computer vision",
+        "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Image Processing",
+            "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },
+        {
+          "data": {
+            "id": "Intelligent word recognition",
+            "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },
+        {
+          "data": {
+            "id": "Object recognition",
+            "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },
+        {
+          "data": {
+            "id": "Optical mark recognition",
+            "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum neque turpis, nec blandit leo blandit vitae. Praesent placerat faucibus dui. Nam viverra, orci et elementum maximus, lectus odio lobortis turpis, quis egestas nisi leo et dolor. Sed eget nulla ultricies, ultricies leo ut, semper est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eleifend augue ac est suscipit facilisis. Cras convallis orci in consequat vulputate. Nulla gravida eu tellus nec congue. Fusce fringilla tempus leo, eu gravida nibh interdum vel. Nam blandit libero nec blandit tempus. Quisque eget tincidunt nulla. Mauris rhoncus arcu ante, non gravida arcu tincidunt sit amet. Integer nec metus tincidunt, vestibulum nisl consectetur, facilisis enim. Sed vitae pulvinar erat, et molestie ante. Aenean pellentesque vitae quam in tristique. Aliquam vulputate facilisis eros, in hendrerit nunc hendrerit a.", "Nulla quis eros vel felis accumsan mollis accumsan vitae risus. Praesent et tellus pellentesque purus placerat condimentum nec id turpis. Proin ullamcorper quis est at sollicitudin. Pellentesque vehicula euismod arcu id luctus. Nam ultricies neque eu lobortis condimentum. In hac habitasse platea dictumst. Aliquam id libero vitae nisi aliquet facilisis.", "Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu.", "Curabitur bibendum maximus lorem, non interdum velit euismod vitae. Maecenas bibendum tincidunt pellentesque. Nulla consectetur velit vitae velit finibus dictum. Sed scelerisque nunc a nibh egestas sagittis. Aenean blandit mollis urna, id convallis mi faucibus eget. Vivamus maximus mattis ipsum a euismod. Morbi scelerisque, ex et cursus ultricies, augue odio suscipit tellus, non molestie elit lectus eget ex. Aenean vulputate, magna nec viverra placerat, urna risus interdum lorem, eu ullamcorper nisi arcu non justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a dolor vel nulla commodo tincidunt.", "Cras ligula erat, porta eu placerat a, rutrum quis nulla. Nulla rhoncus est ornare cursus porta. Phasellus tristique vehicula nisl, ac vehicula eros pellentesque in. Sed eget rhoncus magna. Duis pretium, nibh ac egestas accumsan, est odio facilisis purus, et posuere turpis augue et urna. Nullam dapibus eros eget dui vestibulum tempor. Phasellus venenatis dictum odio vitae pulvinar. Aenean vitae lobortis diam. Duis hendrerit dictum enim nec porttitor"],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          "children": [
+            {
+              "data": {
+                "id": "Handwriting recognition",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            },
+            {
+              "data": {
+                "id": "Optical character recognition",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            },
+            {
+              "data": {
+                "id": "Automatic number plate recognition",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "id": "Facial recognition systems",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          "children": [
+            {
+              "data": {
+                "id": "Silent speech interface",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Computer Audition",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Speech recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },
+        {
+          "data": {
+            "id": "Speaker recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Diagnosis (artificial intelligence)",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Intelligent control",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Knowledge management",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Knowledge representation",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },
+        {
+          "data": {
+            "id": "Semantic web",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Virtual reality",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Virtual Intelligence",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Vehicle Infrastructure integration",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Strategic planning",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Speech generating device",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Robotics",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Behavior-based robotics",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Cognitive",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Cybernetics",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Developmental robotics",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Epigenetic robotics",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Evolutionary robotics",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Pattern recognition",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Optical character recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Handwriting recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Speech recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Face recognition",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Nonlinear control",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      }
+    },
+    {
+      "data": {
+        "id": "Natural language processing",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Chat bots",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Language identification",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Natural language user interface",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Natural language understanding",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Machine translation",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          "children": [
+            {
+              "data": {
+                "id": "Statistical semantics",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            }
+          ]
+        },{
+          "data": {
+            "id": "Question answering",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Semantic translation",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Machine learning",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Constrained Conditional Models",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Deep learning",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Neural modeling fields",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "Knowledge management concept mining",
+        "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+        "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Data mining",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Text mining",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Process mining",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "E-mail spam filtering",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          }
+        },{
+          "data": {
+            "id": "Information extraction",
+            "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+            "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          "children": [
+            {
+              "data": {
+                "id": "Activity recognition",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            },
+            {
+              "data": {
+                "id": "Image retrieval",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            },
+            {
+              "data": {
+                "id": "Named-entity extraction",
+                "description": ["Etiam sed condimentum eros. Proin tempor a turpis ultricies rutrum. Mauris id porttitor massa. Fusce bibendum elit tristique massa interdum vehicula. Nulla sed nunc massa. Nam vel dignissim lectus. Cras et congue neque, consectetur fringilla arcu."],
+                "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
