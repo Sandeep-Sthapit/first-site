@@ -220,7 +220,7 @@ $(document).ready(function(){
 			sessionStorage.setItem("score", JSON.stringify(score));
 			sessionStorage.setItem("totalQuestionCount", JSON.stringify(total_question_count));
 			//save to local storage
-			document.location = "/badges/"+myData.character+".html";
+			document.location = "./badges/"+myData.character+".html";
 			//open new page where this is pulled up
 		}
 
