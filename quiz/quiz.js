@@ -313,8 +313,8 @@ $(document).ready(function(){
 			$("#next-button").on('click', function(event) {
 				next_question = get_next_question(current_level);
 				if(count == total_question_count){
-					//generateBadge(badge, content_url); //exchange with below to see the 3rd solution
-					generateBadgeSolution3(badge, content_url); //for readability
+					generateBadge(badge, content_url); //exchange with below to see the 3rd solution
+// 					generateBadgeSolution3(badge, content_url); //for readability
 					$('#quiz-content').css('top', '0');
 					$('#quiz-content').css('height', '100%');
 					return false;
