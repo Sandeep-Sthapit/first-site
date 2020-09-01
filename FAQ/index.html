@@ -38,12 +38,12 @@
                 <button class="accordion"><p>{{question}}</p><img src ="https://res.cloudinary.com/sandeepsthapit/image/upload/v1586501818/FAQ/down-carot.svg"></button>
                 <div class="panel">
                   {{#if answer}}
-                    <p>{{answer}}</p>
+                    <p>{{{answer}}}</p>
                   {{/if}}
                   {{#if answerlist}}
                     <ul class="answerlist">
                     {{#each answerlist}}
-                      <li>{{this}}</li>
+                      <li>{{{this}}}</li>
                     {{/each}}
                     </ul>
                   {{/if}}
@@ -56,6 +56,7 @@
     <div class="content">
       <div id='faq-content'></div>
       <div id='faq-credentials'>
+        <p>hello there </br>and there</p>
         <p>Content Writing and Review: Dr. Jane Wilson-Howarth ( BM, MSc (Oxon), DCH, FFTM RCPS )</p>
         <p>Dr Jane Wilson-Howarth is a British physician with 25 years experience of practise in the UK and around 13 years experience of working on health promotion in Asia. She has a special interest in zoonoses; <a href="www.wilson-howarth.com" target="_blank">www.wilson-howarth.com</a></p>
       </div>
